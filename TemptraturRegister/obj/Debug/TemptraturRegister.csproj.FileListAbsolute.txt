@@ -1,0 +1,12 @@
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\bin\Debug\TemptraturRegister.exe.config
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\bin\Debug\TemptraturRegister.exe
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\bin\Debug\TemptraturRegister.pdb
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\obj\Debug\TemptraturRegister.csprojResolveAssemblyReference.cache
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\obj\Debug\TemptraturRegister.Main.resources
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\obj\Debug\TemptraturRegister.Properties.Resources.resources
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\obj\Debug\TemptraturRegister.csproj.GenerateResource.Cache
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\obj\Debug\TemptraturRegister.exe
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\obj\Debug\TemptraturRegister.pdb
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\bin\Debug\HtmlAgilityPack.dll
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\bin\Debug\HtmlAgilityPack.pdb
+c:\users\mindator\documents\visual studio 2015\Projects\TemptraturRegister\TemptraturRegister\bin\Debug\HtmlAgilityPack.xml
