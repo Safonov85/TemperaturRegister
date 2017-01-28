@@ -29,45 +29,44 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.listBox = new System.Windows.Forms.ListBox();
-            this.textBox = new System.Windows.Forms.TextBox();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // timer
             // 
             this.timer.Enabled = true;
-            this.timer.Interval = 1000;
+            this.timer.Interval = 600000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // listBox
             // 
             this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new System.Drawing.Point(373, 117);
+            this.listBox.Location = new System.Drawing.Point(29, 106);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(121, 277);
+            this.listBox.Size = new System.Drawing.Size(451, 277);
             this.listBox.TabIndex = 1;
             // 
-            // textBox
+            // notifyIcon
             // 
-            this.textBox.Location = new System.Drawing.Point(76, 117);
-            this.textBox.Multiline = true;
-            this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(257, 277);
-            this.textBox.TabIndex = 2;
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "notifyIcon";
+            this.notifyIcon.Visible = true;
+            this.notifyIcon.DoubleClick += new System.EventHandler(this.notifyIcon_DoubleClick);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 475);
-            this.Controls.Add(this.textBox);
             this.Controls.Add(this.listBox);
             this.Name = "Main";
             this.Text = "Temp Reg";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.Resize += new System.EventHandler(this.Main_Resize);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -75,7 +74,7 @@
 
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.ListBox listBox;
-        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
     }
 }
 
