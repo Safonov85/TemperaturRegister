@@ -33,21 +33,21 @@ namespace TemptraturRegister
 
         public void GetTempInfo(string html)
         {
+            // using try - catch because internet may be down sometimes and throw the list an exception
             try
             {
                 string htmlCode = "";
                 using (WebClient client = new WebClient())
                 {
                     client.Headers.Add(HttpRequestHeader.UserAgent, "AvoidError");
-
                     
-
                     htmlCode = client.DownloadString(html);
                 }
                 HtmlAgilityPack.HtmlDocument document = new HtmlAgilityPack.HtmlDocument();
 
                 document.LoadHtml(htmlCode);
 
+                // gets the degrees of the weather (in celcius)
                 foreach (HtmlNode node in document.DocumentNode.SelectNodes("//td[@class='weather current']"))
                 {
                     string currentTempValue;
@@ -74,6 +74,7 @@ namespace TemptraturRegister
             
         }
 
+        // Saving all the items in the listbox to a .txt file
         public void SaveListBox()
         {
             using (TextWriter textWriter = new StreamWriter(currentFileName))
@@ -88,6 +89,7 @@ namespace TemptraturRegister
 
         private void Main_Load(object sender, EventArgs e)
         {
+            notifyIcon.Visible = true;
             currentFileName = "SavedList_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
             listBox.Items.Add("Vädret i Stockholm");
             GetTempInfo(city);
@@ -102,10 +104,10 @@ namespace TemptraturRegister
                 this.Hide();
             }
 
-            else if (FormWindowState.Normal == this.WindowState)
-            {
-                notifyIcon.Visible = false;
-            }
+            //else if (FormWindowState.Normal == this.WindowState)
+            //{
+            //    notifyIcon.Visible = false;
+            //}
         }
 
         private void notifyIcon_DoubleClick(object sender, EventArgs e)
